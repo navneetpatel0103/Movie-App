@@ -1,0 +1,28 @@
+*{
+  font-family: 'Baloo 2', cursive;
+font-family: 'Ubuntu', sans-serif;
+}
+.box{
+  color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 25px;
+  justify-content: space-evenly;
+}
+.top{
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 8px 25px;
+}
+.searchBar{
+  border-radius: 8px;
+}
+.poster
+{
+  height: 380px;
+    width: 290px;
+    object-fit: cover;
+}
