@@ -1,21 +1,14 @@
 import React from 'react'
 import MovieContainer from './MovieContainer'
 
-export default function MovieListContainer() {
+export default function MovieListContainer(props) {
   return (
-    <div className='box'>
-      <MovieContainer/>
-      <MovieContainer/>
-      <MovieContainer/>
-      <MovieContainer/>
-      <MovieContainer/>
-      <MovieContainer/>
-      <MovieContainer/>
-      <MovieContainer/>
-      <MovieContainer/>
-      <MovieContainer/>
-      <MovieContainer/>
-      <MovieContainer/>
+    <>
+    <div className='box' style={{border:"2px solid red"}}>
+      {
+      props.movieList?.length ?props.movieList.map(()=><MovieContainer/>): "No movie Search"
+      }
     </div>
+    </>
   )
 }
