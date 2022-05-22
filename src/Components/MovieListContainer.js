@@ -1,12 +1,13 @@
-import React from 'react'
+import React,{useState} from 'react'
 import MovieContainer from './MovieContainer'
-
 export default function MovieListContainer(props) {
+  
   return (
     <>
-    <div className='box' style={{border:"2px solid red"}}>
+    <div className='box' >
       {
-      props.movieList?.length ?props.movieList.map(()=><MovieContainer/>): "No movie Search"
+      props.movieList?.length ?props.movieList.map((movie, index)=><MovieContainer key={index} movie={movie} 
+      onclick={props.setSelectedMovie}/>): "No movie Search"
       }
     </div>
     </>
