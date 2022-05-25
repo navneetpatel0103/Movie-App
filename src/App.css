@@ -19,6 +19,17 @@ font-family: 'Ubuntu', sans-serif;
 }
 .searchBar{
   border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  padding: 5px 14px;
+  background-color: white;
+  justify-content: center;
+}
+.searchInput{
+  width: -webkit-fill-available;
+  margin: 0 2px;
+  border: none;
+  outline: none;
 }
 .poster
 {

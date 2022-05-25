@@ -2,8 +2,11 @@ import axios from 'axios'
 import React, {useEffect,useState} from 'react'
 import cross from '../Assets/Images/cross.png'
 import { API_KEY } from '../App'
+
 export default function MovieInfo(props) {
     const [movieInfo, setMovieInfo] = useState();
+
+
     useEffect(() => {
         axios.get(`https://www.omdbapi.com/?i=${props.selectedMovie}&apikey=${API_KEY}`)
         .then((response)=>{
