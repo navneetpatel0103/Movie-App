@@ -1,5 +1,4 @@
 import React from 'react'
-import MovieInfo from './MovieInfo';
 
 export default function MovieContainer(props) {
   const {Title, Year, imdbID, Type, Poster}=props.movie;
